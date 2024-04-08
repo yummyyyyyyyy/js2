@@ -20,8 +20,8 @@ class gameoverlevel3 extends Phaser.Scene {
     var spaceDown = this.input.keyboard.addKey('SPACE');
 
     spaceDown.on('down', function () {
-        console.log("Spacebar pressed, goto listlevel1");
-        this.scene.start("listlevel1");
+        console.log("Spacebar pressed, goto listlevel3");
+        this.scene.start("listlevel3");
     }, this);
 
     // Step 2 : Preload any images here

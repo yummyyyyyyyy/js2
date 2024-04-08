@@ -237,12 +237,7 @@ this.anims.create({
     this.cursors = this.input.keyboard.createCursorKeys();
     console.log("This is preloadScene spacebar V3");
 
-    var spaceDown = this.input.keyboard.addKey('SPACE');
-
-    spaceDown.on('down', function () {
-      console.log("Space pressed, goto level2");
-      this.scene.start("level2");
-    }, this);
+  
 
     var key1Down = this.input.keyboard.addKey(49);
     var key2Down = this.input.keyboard.addKey(50);

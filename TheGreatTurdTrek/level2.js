@@ -269,12 +269,7 @@ this.rak.setCollisionByExclusion(-1, true);
       this.cursors = this.input.keyboard.createCursorKeys();
       console.log("This is preloadScene spacebar V3");
 
-    var spaceDown = this.input.keyboard.addKey('SPACE');
-
-    spaceDown.on('down', function () {
-      console.log("Space pressed, goto level2");
-      this.scene.start("farm");
-    }, this);
+   
 
     var key1Down = this.input.keyboard.addKey(49);
     var key2Down = this.input.keyboard.addKey(50);
@@ -310,10 +305,10 @@ this.rak.setCollisionByExclusion(-1, true);
   
     update() {
 
-      this.physics.moveToObject(this.mouse1,this.player, 250, 3000);
-      this.physics.moveToObject(this.mouse2,this.player, 250, 3050);
-      this.physics.moveToObject(this.mouse3,this.player, 250, 3000);
-      this.physics.moveToObject(this.mouse4,this.player, 250, 3000);
+      this.physics.moveToObject(this.mouse1,this.player, 250, 4000);
+      this.physics.moveToObject(this.mouse2,this.player, 250, 4000);
+      this.physics.moveToObject(this.mouse3,this.player, 300, 4000);
+      this.physics.moveToObject(this.mouse4,this.player, 300, 4000);
 
       if (this.cursors.left.isDown) {
         this.player.setVelocityX(-160);
